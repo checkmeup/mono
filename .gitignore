@@ -3,3 +3,6 @@
 
 # Misc
 .DS_Store
+
+# Test coverage output
+.coverage.out
