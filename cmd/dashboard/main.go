@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"github.com/checkmeup/mono/internal/log"
+)
 
 func main() {
-	fmt.Printf("dashboard")
+	l := log.Default()
+	l.Debug("Hello %s", "World")
 }

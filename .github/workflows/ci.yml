@@ -21,7 +21,7 @@ jobs:
 
       - name: build and test
         run: |
-          go get -v
+          go get -v ./...
           go test -timeout=60s -race -vet asmdecl,assign,atomic,bools,buildtag,cgocall,composites,copylocks,httpresponse,loopclosure,lostcancel,nilfunc,shift,stdmethods,structtag,tests,unmarshal,unreachable,unsafeptr,unusedresult -coverprofile=.coverage.out ./...
 
       - name: submit coverage
